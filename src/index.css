@@ -28,7 +28,7 @@ form {
 form input[type="text"] {
   padding: 10px;
   height: 5px;
-  width: 80%;
+  width: 90%;
 
   border-radius: 10px;
   border: 1px solid black;
@@ -37,7 +37,7 @@ form input[type="text"] {
 form input[type="number"] {
   padding: 10px;
   height: 5px;
-  width: 80%;
+  width: 90%;
   border-radius: 10px;
   border: 1px solid black;
 }
