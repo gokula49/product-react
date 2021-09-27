@@ -1,13 +1,112 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form_field {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  height: 5px;
+  width: 80%;
+
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+form input[type="number"] {
+  padding: 10px;
+  height: 5px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+  border: 1px solid black;
+  padding: 30px;
+  background:coral;
+  border-radius: 7px;
+  
+}
+
+.contain {
+  display: flex;
+  
+}
+
+.card img {
+  max-width: 200px;
+  padding: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  background-color: gray;
+  margin: 10px;
+  width: 300px;
+  border-radius: 10px;
+  
+}
+
+
+
+h1{
+  text-align: center;
+}
+
+button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 7px;
+}
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width: 480px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+  }
 }
