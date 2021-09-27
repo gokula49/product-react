@@ -51,32 +51,33 @@ function Form() {
         <div>
             <h1> Codingmart Task , Storing Products in Localhost</h1>
             <div className="container">
-                <h1>Product Registration </h1>
+                <div className="inner">
                 <form onSubmit={(e) => getData(e)}>
                     <div className="form_field">
                         <label htmlFor="product-name">Product Name</label>
-                        <input type="text" name="product-name" ref={productName} required/>
+                        <input type="text" name="product-name" ref={productName} />
                     </div>
 
                     <div className="form_field">
                         <label htmlFor="product-name">Product Quantity</label>
-                        <input type="number" name="product-quantity" ref={productQuantity} required />
+                        <input type="number" name="product-quantity" ref={productQuantity} />
                     </div>
 
                     <div className="form_field">
                         <label htmlFor="picture">Upload Image </label>
-                        <input type="file" name="picture" id="picture" ref={productImage} required />
+                        <input type="file" name="picture" id="picture" ref={productImage} />
                     </div>
 
                     <div className="form_field">
                         <label htmlFor="product-name">Product Price</label>
-                        <input type="number" name="product-prixe" ref={productPrice} required />
+                        <input type="number" name="product-prixe" ref={productPrice} />
                     </div>
 
                     <button type="submit">Save Product</button>
                 </form>
+                </div>
             </div>
-            <div  class="cards">
+                <div  class="cards">
             {
                 localStorage.getItem("product") ? JSON.parse(localStorage.getItem("product")).map((e, i) => {
                     return (
@@ -97,6 +98,7 @@ function Form() {
                 }) : <h2>No Products added yet...</h2>
             }
             </div>
+     
         </div>
     )
 }
